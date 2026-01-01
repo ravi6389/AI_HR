@@ -19,7 +19,7 @@ st.set_page_config(page_title="AI Resume Ranking + Chatbot", layout="wide")
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 # st.write('GROQ API Key is..', GROQ_API_KEY)
-st.write('GROQ API KEY is..', GROQ_API_KEY)
+
 llm = ChatGroq(temperature=0.8, groq_api_key=GROQ_API_KEY, model_name="llama-3.3-70b-versatile")
 
 
@@ -231,5 +231,6 @@ if resumes and jd_file:
 
 else:
     st.info("👈 Upload resumes and a job description to begin.")
+
 
 
