@@ -201,8 +201,8 @@ if resumes and jd_file:
 
     ranking_df = pd.DataFrame(rows).sort_values("Score", ascending=False)
 
-    st.subheader("📊 Ranked Candidates")
-    st.dataframe(ranking_df, use_container_width=True)
+    # st.subheader("📊 Ranked Candidates")
+    # st.dataframe(ranking_df, use_container_width=True)
 
     # ----------------------------
     # CHAT
@@ -231,6 +231,7 @@ if resumes and jd_file:
 
 else:
     st.info("👈 Upload resumes and a job description to begin.")
+
 
 
 
